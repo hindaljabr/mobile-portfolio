@@ -17,15 +17,18 @@ Any web browser.
 
 
 ### My Changes to the Existing Code
-*Main page*: is optimized to speed score of at least 90/100 for Mobile and Desktop.
+*Main page*: is optimized, images are optimized.
 
-*changePizzaSlices Function*:
+*Main js file*:
 - Stored document.querySelectorAll() so it doesn't have to be called in each iteration.
 - Moved setting of style.width to a separate loop.
-
-*updatePositions Function*:
 - Replaced style.left with style.transform.
 - Removed pizzas that we never seen from the Render Tree.
 - Moved body.scrollTop out of the loop.
-- Replaced use of querySelectorAll() with getElementsByClassName().
 - Replaced expression using modulo operator with a simple counter var.
+
+### Changes after review
+- Optimized pizza.png.
+- Created a local var randomPizzaContainer outside the loop so the DOM is not explicitly touched in every iteration.
+- Removed dx and newwidth outside the loop since its a static value.
+- Removed movingPizzas outside the loop and added movingPizzas.appendChild(elem) inside the loop.
