@@ -32,3 +32,6 @@ Any web browser.
 - Created a local var randomPizzaContainer outside the loop so the DOM is not explicitly touched in every iteration.
 - Removed dx and newwidth outside the loop since its a static value.
 - Removed movingPizzas outside the loop and added movingPizzas.appendChild(elem) inside the loop.
+
+### Changes after 2nd review
+- Changed the [i] to [0] in determineDx.

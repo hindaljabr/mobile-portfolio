@@ -451,7 +451,7 @@ var resizePizzas = function(size) {
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
     //The document.getElementsByClassName() Web API call is faster.
-    var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[i], size);
+    var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[0], size);
     var newwidth = (document.getElementsByClassName("randomPizzaContainer")[i].offsetWidth + dx) + 'px';
 
     //local variable so the DOM is not explicitly touched in every iteration!
