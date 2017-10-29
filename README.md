@@ -35,3 +35,9 @@ Any web browser.
 
 ### Changes after 2nd review
 - Changed the [i] to [0] in determineDx.
+
+###Changes after 3rd review.
+- Changed [i] to [0] in line 455 in main.js.
+- Added the critical css in index.html.
+- Added media attribute in index.html.
+- Changed line 516 in main.js from document.body.scrollTop to document.documentElement.scrollTop.
